@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" style="?attr/styleCaldroidViewLayout"
+    <LinearLayout android:orientation="horizontal" android:id="@c0912b/calendar_title_view" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:id="@c0912b/calendar_left_arrow" style="?attr/styleCaldroidLeftArrow" />
+        <TextView android:id="@c0912b/calendar_month_year_textview" style="?attr/styleCaldroidMonthName" />
+        <Button android:id="@c0912b/calendar_right_arrow" style="?attr/styleCaldroidRightArrow" />
+    </LinearLayout>
+    <GridView android:id="@c0912b/weekday_gridview" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="-10dp" android:stretchMode="columnWidth" android:numColumns="UNKNOWN_DATA_0x7" />
+    <com.antonyt.infiniteviewpager.InfiniteViewPager android:id="@c0912b/months_infinite_pager" android:layout_width="match_parent" android:layout_height="wrap_content" />
+</LinearLayout>

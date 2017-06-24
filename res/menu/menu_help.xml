@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res-auto">
+    <item app:icon="@mipmap/ic_feedback_white_36dp" app:id="@id/help" app:orderInCategory="100" app:title="Send Feedback" app:showAsAction="always" />
+</menu>

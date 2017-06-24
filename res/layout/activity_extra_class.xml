@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@id/root" android:background="#dee5e5" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <android.support.design.widget.AppBarLayout android:id="@id/appbar_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <include android:id="@id/toolbar" layout="@layout/action_bar" />
+        </android.support.design.widget.AppBarLayout>
+        <android.support.v7.widget.RecyclerView android:id="@id/extra_subjects" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/appbar_layout" />
+        <RelativeLayout android:id="@id/empty_view_extra_goto" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+            <ImageView android:id="@id/empty_image_extra_goto" android:layout_width="UNKNOWN_DATA_0x9601" android:layout_height="UNKNOWN_DATA_0x9601" android:src="@drawable/empty_book_green" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="18sp" android:id="@id/empty_text_extra_goto" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="No extra classes today" android:layout_below="@id/empty_image_extra_goto" />
+        </RelativeLayout>
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

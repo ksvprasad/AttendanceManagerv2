@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res-auto" ads:background="#dee5e5" ads:layout_width="match_parent" ads:layout_height="match_parent">
+    <RelativeLayout ads:layout_width="match_parent" ads:layout_height="match_parent">
+        <android.support.design.widget.AppBarLayout ads:id="@id/appbar_layout" ads:layout_width="match_parent" ads:layout_height="wrap_content">
+            <android.support.v7.widget.Toolbar ads:id="@id/toolbar" ads:background="?attr/colorPrimary" ads:layout_width="match_parent" ads:layout_height="wrap_content" ads:minHeight="?attr/actionBarSize" ads:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+                <Spinner ads:id="@id/spinner_nav" ads:layout_width="wrap_content" ads:layout_height="wrap_content" ads:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+            </android.support.v7.widget.Toolbar>
+        </android.support.design.widget.AppBarLayout>
+        <LinearLayout ads:orientation="vertical" ads:id="@id/display_root" ads:layout_width="match_parent" ads:layout_height="match_parent" ads:layout_below="@id/appbar_layout" />
+        <android.support.v7.widget.CardView ads:id="@id/card_layout" ads:clickable="true" ads:layout_width="match_parent" ads:layout_height="wrap_content" ads:layout_margin="8dp" ads:foreground="?unknown_attr_ref: 101030e" ads:layout_below="@id/display_root" ads:cardBackgroundColor="@color/white" ads:contentPadding="10dp">
+            <LinearLayout ads:orientation="horizontal" ads:layout_width="match_parent" ads:layout_height="wrap_content">
+                <RelativeLayout ads:id="@id/left_legend" ads:layout_width="wrap_content" ads:layout_height="wrap_content">
+                    <View ads:id="@id/present_view" ads:background="@color/attendedColor" ads:layout_width="UNKNOWN_DATA_0xf01" ads:layout_height="UNKNOWN_DATA_0xf01" ads:layout_margin="5dp" />
+                    <View ads:id="@id/absent_view" ads:background="@color/absentColor" ads:layout_width="UNKNOWN_DATA_0xf01" ads:layout_height="UNKNOWN_DATA_0xf01" ads:layout_margin="5dp" ads:layout_below="@id/present_view" />
+                    <View ads:id="@id/no_class_view" ads:background="@color/noClassColor" ads:layout_width="UNKNOWN_DATA_0xf01" ads:layout_height="UNKNOWN_DATA_0xf01" ads:layout_margin="5dp" ads:layout_below="@id/absent_view" />
+                    <TextView ads:textSize="15sp" ads:id="@id/present_view_text" ads:padding="5dp" ads:layout_width="wrap_content" ads:layout_height="wrap_content" ads:text="@string/present" ads:layout_toRightOf="@id/present_view" />
+                    <TextView ads:textSize="15sp" ads:id="@id/absent_view_text" ads:padding="5dp" ads:layout_width="wrap_content" ads:layout_height="wrap_content" ads:text="@string/absent" ads:layout_toRightOf="@id/absent_view" ads:layout_below="@id/present_view" />
+                    <TextView ads:textSize="15sp" ads:id="@id/no_class_text" ads:padding="5dp" ads:layout_width="wrap_content" ads:layout_height="wrap_content" ads:text="@string/noClass" ads:layout_toRightOf="@id/no_class_view" ads:layout_below="@id/absent_view" />
+                </RelativeLayout>
+                <RelativeLayout ads:layout_width="match_parent" ads:layout_height="wrap_content" ads:layout_marginLeft="10dp">
+                    <TextView ads:textSize="18sp" ads:id="@id/tot_class" ads:padding="5dp" ads:layout_width="wrap_content" ads:layout_height="wrap_content" ads:text="Total Classes:" ads:layout_centerHorizontal="true" />
+                    <TextView ads:textSize="15sp" ads:id="@id/att_class" ads:layout_width="wrap_content" ads:layout_height="wrap_content" ads:text="Attendded:" ads:layout_below="@id/tot_class" ads:layout_centerHorizontal="true" />
+                    <TextView ads:textSize="15sp" ads:id="@id/bunk_class" ads:layout_width="wrap_content" ads:layout_height="wrap_content" ads:text="Bunked:" ads:layout_below="@id/att_class" ads:layout_centerHorizontal="true" />
+                </RelativeLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <com.google.android.gms.ads.NativeExpressAdView ads:id="@id/adView" ads:layout_width="match_parent" ads:layout_height="wrap_content" ads:layout_below="@id/card_layout" ads:adSize="300x80" ads:adUnitId="@string/native_ad_unit_id" />
+    </RelativeLayout>
+</ScrollView>

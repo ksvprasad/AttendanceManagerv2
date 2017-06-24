@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res-auto" card_view:background="#dee5e5" card_view:layout_width="match_parent" card_view:layout_height="match_parent">
+    <android.support.design.widget.AppBarLayout card_view:id="@id/appbar_layout" card_view:layout_width="match_parent" card_view:layout_height="wrap_content">
+        <include card_view:id="@id/toolbar" layout="@layout/action_bar" />
+    </android.support.design.widget.AppBarLayout>
+    <android.support.v7.widget.CardView card_view:id="@id/adView_card" card_view:layout_width="match_parent" card_view:layout_height="wrap_content" card_view:layout_marginLeft="16dp" card_view:layout_marginTop="10dp" card_view:layout_marginRight="16dp" card_view:layout_below="@id/appbar_layout" card_view:cardBackgroundColor="#fff" card_view:cardCornerRadius="6dp">
+        <com.google.android.gms.ads.NativeExpressAdView card_view:id="@id/adView" card_view:layout_width="match_parent" card_view:layout_height="wrap_content" card_view:adSize="300x90" card_view:adUnitId="@string/native_ad_unit_id" />
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.RecyclerView card_view:id="@id/subjects" card_view:layout_width="match_parent" card_view:layout_height="wrap_content" card_view:layout_below="@id/adView_card" />
+</RelativeLayout>

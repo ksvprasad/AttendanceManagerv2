@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res-auto" card_view:layout_width="match_parent" card_view:layout_height="wrap_content" card_view:layout_marginLeft="20dp" card_view:layout_marginTop="10dp" card_view:layout_marginRight="20dp" card_view:cardBackgroundColor="#fff" card_view:cardCornerRadius="4dp">
+    <com.daimajia.swipe.SwipeLayout swipe:id="@id/swipe" swipe:background="?attr/selectableItemBackground" swipe:layout_width="match_parent" swipe:layout_height="wrap_content" swipe:leftEdgeSwipeOffset="0dp" swipe:rightEdgeSwipeOffset="0dp">
+        <LinearLayout swipe:id="@id/left_swipe" swipe:background="#f7f9f7" swipe:layout_width="UNKNOWN_DATA_0x3201" swipe:layout_height="match_parent" swipe:weightSum="1.0">
+            <ImageButton swipe:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" swipe:id="@id/edit" swipe:background="?attr/selectableItemBackgroundBorderless" swipe:padding="10dp" swipe:layout_width="UNKNOWN_DATA_0x1" swipe:layout_height="match_parent" swipe:src="@mipmap/ic_edit_black_24dp" swipe:tint="@color/colorPrimaryDark" swipe:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout swipe:id="@id/right_swipe" swipe:background="#f7f9f7" swipe:layout_width="UNKNOWN_DATA_0x3201" swipe:layout_height="match_parent" swipe:weightSum="1.0">
+            <ImageButton swipe:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" swipe:id="@id/delete_subject" swipe:background="?attr/selectableItemBackgroundBorderless" swipe:layout_width="UNKNOWN_DATA_0x1" swipe:layout_height="match_parent" swipe:src="@mipmap/ic_delete_black_24dp" swipe:tint="@color/colorPrimaryDark" swipe:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout swipe:orientation="vertical" swipe:layout_width="match_parent" swipe:layout_height="wrap_content">
+            <TextView swipe:textSize="20sp" swipe:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" swipe:id="@id/subject" swipe:padding="10dp" swipe:layout_width="match_parent" swipe:layout_height="wrap_content" swipe:text="Name of the Subject" />
+        </LinearLayout>
+    </com.daimajia.swipe.SwipeLayout>
+</android.support.v7.widget.CardView>

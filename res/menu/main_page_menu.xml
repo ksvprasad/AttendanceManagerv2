@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res-auto">
+    <item app:id="@id/settings" app:title="Settings" app:showAsAction="UNKNOWN_DATA_0x0" />
+    <item app:id="@id/help" app:title="Help and Feedback" app:showAsAction="UNKNOWN_DATA_0x0" />
+    <item app:id="@id/about_us" app:title="About Us" app:showAsAction="UNKNOWN_DATA_0x0" />
+</menu>

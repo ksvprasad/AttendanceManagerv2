@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res-auto" card_view:id="@id/root_card" card_view:layout_width="match_parent" card_view:layout_height="wrap_content" card_view:layout_marginLeft="10dp" card_view:layout_marginTop="10dp" card_view:layout_marginRight="10dp" card_view:cardBackgroundColor="#fff" card_view:cardCornerRadius="4dp" card_view:contentPadding="4dp">
+    <com.daimajia.swipe.SwipeLayout swipe:id="@id/swipe" swipe:background="?attr/selectableItemBackground" swipe:layout_width="match_parent" swipe:layout_height="wrap_content" swipe:leftEdgeSwipeOffset="0dp" swipe:rightEdgeSwipeOffset="0dp">
+        <LinearLayout android:orientation="horizontal" android:id="@id/bottom_wrapper" android:background="#fafafa" android:layout_width="UNKNOWN_DATA_0xf001" android:layout_height="match_parent" android:weightSum="3.0">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1.0">
+                <TextView android:textSize="15sp" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@id/no_class" android:background="?attr/selectableItemBackgroundBorderless" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Off" android:drawableTop="@mipmap/ic_action_content_remove_circle" android:drawablePadding="5dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1.0">
+                <TextView android:textSize="15sp" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@id/bunk_class" android:background="?attr/selectableItemBackgroundBorderless" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Bunk" android:drawableTop="@mipmap/ic_action_navigation_cancel" android:drawablePadding="5dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1.0">
+                <TextView android:textSize="15sp" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@id/attended_class" android:background="?attr/selectableItemBackgroundBorderless" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Attend" android:drawableTop="@mipmap/ic_action_checked_done" android:drawablePadding="5dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/bottom_wrapper1" android:background="#fafafa" android:layout_width="UNKNOWN_DATA_0x5001" android:layout_height="match_parent">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                <TextView android:textSize="15sp" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@id/reset_attendance" android:background="?attr/selectableItemBackgroundBorderless" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Reset" android:drawableTop="@mipmap/ic_action_action_restore" android:drawablePadding="5dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <RelativeLayout android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:id="@id/container" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="11.0"
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="3.0">
+                    <TextView android:textSize="25sp" android:ellipsize="end" android:id="@id/subject_name" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="Compiler Design" android:maxLines="1" android:scrollHorizontally="true" android:singleLine="true" />
+                    <RelativeLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="18sp" android:id="@id/attended" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="Attended: 5" />
+                        <TextView android:textSize="18sp" android:id="@id/total" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Total: 10" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="8.0">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/custom_perc_background" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+                    <TextView android:textSize="35sp" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@id/sub_perc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="88.8" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/container">
+                <View android:id="@id/view1" android:background="#dedede" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x101" android:layout_marginLeft="5dp" android:layout_marginRight="5dp" />
+                <ImageView android:id="@id/check_mark" android:padding="2dp" android:layout_width="UNKNOWN_DATA_0x1e01" android:layout_height="UNKNOWN_DATA_0x1e01" android:src="@mipmap/ic_check_circle_black_36dp" android:tint="#727272" android:layout_alignRight="@id/view1" android:layout_centerVertical="true" />
+                <TextView android:textSize="18sp" android:id="@id/sub_detail" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="You need 3 more class" android:layout_toLeftOf="@id/check_mark" android:layout_below="@id/view1" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </com.daimajia.swipe.SwipeLayout>
+</android.support.v7.widget.CardView>

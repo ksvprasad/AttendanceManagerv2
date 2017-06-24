@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<state-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <state>
+        <points>
+            <item
+                0 />
+            <item
+                0.1 />
+            <item
+                1 />
+            <item
+                0.1 />
+            <item
+                0 />
+            <item
+                0.5 />
+            <item
+                1 />
+            <item
+                0.5 />
+            <item
+                0 />
+            <item
+                0.9 />
+            <item
+                1 />
+            <item
+                0.9 />
+        </points>
+    </state>
+    <state>
+        <points>
+            <item
+                0.5 />
+            <item
+                0 />
+            <item
+                1 />
+            <item
+                0.5 />
+            <item
+                0 />
+            <item
+                0.5 />
+            <item
+                1 />
+            <item
+                0.5 />
+            <item
+                0.5 />
+            <item
+                1 />
+            <item
+                1 />
+            <item
+                0.5 />
+        </points>
+        <links>
+            <item
+                0 />
+            <item
+                2 />
+        </links>
+    </state>
+</state-list>

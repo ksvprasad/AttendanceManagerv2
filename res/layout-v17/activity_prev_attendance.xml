@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@id/root" android:background="@drawable/drawer_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@id/activity_previous_attendance" android:background="@drawable/drawer_background" android:layout_width="match_parent" android:layout_height="match_parent"
+        <RelativeLayout android:id="@id/header" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="22sp" android:textColor="@color/white" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@id/page_title" android:padding="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="Past Attendance" />
+            <View android:id="@id/view1" android:background="@color/white" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x101" android:layout_marginLeft="40dp" android:layout_marginRight="40dp" android:layout_below="@id/page_title" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="15sp" android:textColor="@color/white" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@id/help_text" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/prev_attendance_help" android:layout_below="@id/view1" />
+            <ImageView android:id="@id/tickmark" android:background="?attr/selectableItemBackgroundBorderless" android:padding="5dp" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ic_done_white_36dp" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <RelativeLayout android:background="@color/backgroundColor" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/header">
+            <android.support.v7.widget.RecyclerView android:id="@id/prev_att_recycler" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="16dp" android:layout_above="@id/clear" />
+            <Button android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@id/clear" android:background="@drawable/item_border" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp" android:layout_marginBottom="13dp" android:text="Clear Past Attendance" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:textAllCaps="false" />
+        </RelativeLayout>
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

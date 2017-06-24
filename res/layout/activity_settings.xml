@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:id="@id/root" app:background="@color/backgroundColor" app:layout_width="match_parent" app:layout_height="match_parent">
+    <android.support.design.widget.AppBarLayout app:id="@id/appbar_layout" app:layout_width="match_parent" app:layout_height="wrap_content">
+        <include app:id="@id/app_bar" layout="@layout/action_bar" />
+    </android.support.design.widget.AppBarLayout>
+    <RelativeLayout app:id="@id/text_root" app:background="?attr/selectableItemBackground" app:clickable="true" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_below="@id/appbar_layout">
+        <TextView app:textSize="20sp" app:id="@id/bunk_text" app:padding="16dp" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginLeft="16dp" app:text="Need a break?" />
+        <com.rey.material.widget.Switch app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@id/onOff" app:padding="16dp" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginTop="5dp" app:layout_marginRight="16dp" app:layout_alignParentTop="true" app:layout_alignParentRight="true" app:sw_thumbElevation="2dp" />
+    </RelativeLayout>
+    <LinearLayout app:orientation="horizontal" app:id="@id/linearLayout" app:background="@color/dividerColor" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x40000031" app:layout_marginLeft="16dp" app:layout_marginRight="16dp" app:layout_below="@id/text_root" />
+    <ListView app:id="@id/settings_list" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginLeft="16dp" app:layout_marginRight="16dp" app:divider="@color/dividerColor" app:dividerHeight="0.5dp" app:layout_below="@id/linearLayout" />
+    <com.google.android.gms.ads.NativeExpressAdView app:id="@id/adView" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_below="@id/settings_list" app:layout_alignParentLeft="true" app:layout_alignParentBottom="true" app:adSize="300x80" app:adUnitId="@string/native_ad_unit_id" />
+</RelativeLayout>

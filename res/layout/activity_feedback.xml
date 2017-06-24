@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/backgroundColor" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@id/app_bar" layout="@layout/action_bar" />
+    <android.support.design.widget.TextInputLayout android:id="@id/textTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="40dp" android:layout_marginRight="16dp" android:layout_below="@id/app_bar">
+        <EditText android:textSize="25sp" android:id="@id/feedtitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="What is it about?" android:maxLines="1" android:singleLine="true" />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout android:id="@id/textMsg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="20dp" android:layout_marginRight="16dp" android:layout_below="@id/textTitle">
+        <EditText android:textSize="20sp" android:id="@id/feedmsg" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Your feedback" android:maxLines="5" android:lines="5" android:minLines="2" android:inputType="text|textCapCharacters|textCapWords|textCapSentences|textAutoCorrect|textAutoComplete|textMultiLine|textImeMultiLine|textNoSuggestions|textUri|textEmailAddress|textEmailSubject|textShortMessage|textLongMessage|textPersonName|textPostalAddress|textPassword|textVisiblePassword|textWebEditText|textFilter|textPhonetic|textWebEmailAddress|textWebPassword|phone" />
+    </android.support.design.widget.TextInputLayout>
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <menu name="go_to_date_menu">res/menu/go_to_date_menu.xml</menu>
+    <menu name="main_page_menu">res/menu/main_page_menu.xml</menu>
+    <menu name="menu_feedback">res/menu/menu_feedback.xml</menu>
+    <menu name="menu_help">res/menu/menu_help.xml</menu>
+    <menu name="predictor_menu">res/menu/predictor_menu.xml</menu>
+    <menu name="subject_name">res/menu/subject_name.xml</menu>
+</resources>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <xml name="nav_states">res/xml/nav_states.xml</xml>
+</resources>
